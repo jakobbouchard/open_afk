@@ -1,0 +1,35 @@
+name: open_afk
+description: An open-source setup tool.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  percent_indicator: ^2.1.7+4
+  process_run: ^0.11.0+2
+  logger: ^0.9.4
+  # This plugin is currently broken
+  # logger_flutter: ^0.7.1
+  window_size:
+    git:
+      url: git://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: 927f8cbc09b35d85245c095f2db8df9b186f6618
+  file_chooser:
+    git:
+      url: git://github.com/google/flutter-desktop-embedding.git
+      path: plugins/file_chooser
+      ref: 927f8cbc09b35d85245c095f2db8df9b186f6618
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - scripts/
