@@ -5,14 +5,13 @@ import 'package:window_size/window_size.dart';
 import 'package:process_run/process_run.dart';
 
 void main() {
-  runApp(OpenAFK(
-    title: 'Open AFK',
-  ));
+  runApp(OpenAFK(title: 'Open AFK'));
 }
 
 class OpenAFK extends StatefulWidget {
   OpenAFK({Key key, this.title}) : super(key: key);
   final String title;
+
   @override
   _OpenAFKState createState() => _OpenAFKState();
 }
